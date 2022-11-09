@@ -17,11 +17,11 @@ Then we merged earth data and the data we got from IOT setup and made a predicti
 Our solution is that we created a tool where everyone can know about particular GHG gases emission rate and compare between two small areas. Our application will also notify them in various ways. We will also share our data with government or non-government climate organization so that they can monitor and take necessary steps to control the emission rate of the particular Greenhouse gases.
 
 ## ADVANTAGES:
-1.      Our IoT setup can collect Greenhouse Gases data from little areas which can be compared with other data. It will help everyone to know that which areas are more prone to risks and where we should take steps.
+1. Our IoT setup can collect Greenhouse Gases data from little areas which can be compared with other data. It will help everyone to know that which areas are more prone to risks and where we should take steps.
 
-2.      Data is easily accessible for all type of users. They can track the daily data through our app.
+2. Data is easily accessible for all type of users. They can track the daily data through our app.
 
-3.      Government and Non-Government organization can use our website’s API key to get all data and take important steps.
+3. Government and Non-Government organization can use our website’s API key to get all data and take important steps.
 
 
 ## SPACE AGENCY DATA
