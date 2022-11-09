@@ -7,58 +7,44 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## DETAILED PROJECT DESCRIPTION
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+In this project, a Bayesian nonparametric kernel prediction algorithm in machine learning is applied to predict CO2, Methane, CFC emissions. A literature review has been conducted so that the proper independent variables have been identified. Classical least squares, robust least squares, and algorithms of the GPR were introduced and their prediction performance, including the evaluation criteria that are effective in the measurements for model performance, were summarized. The reliability and efficiency of the proposed algorithms were then demonstrated through the comparison between the actual data and the predicted results. It is found that GPR can give the most accurate predictions on Green House Gas (CO2, Methane, CFC emissions).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+We did collect the earth data from NASA which is collected by using their satellites (Atmospheric Infrared Sounder (AIRS), Orbiting Carbon Observatory-2 (OCO-2), HIRDLS CFCs data from Earthdata Search) and along with that we have set two sensors(MQ2,TGS832) to measure emission rate of greenhouse gases. We recorded data from our IOT device through microcontroller and Lora gateway, we created a server side which helped us to get the time series data.
+Then we merged earth data and the data we got from IOT setup and made a prediction through deep learning. We used Gaussian regression algorithm to get more accurate results. Then we connected this information to our website app which can generate a report and warning. So, Custom users can generate API key from our website.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Our solution is that we created a tool where everyone can know about particular GHG gases emission rate and compare between two small areas. Our application will also notify them in various ways. We will also share our data with government or non-government climate organization so that they can monitor and take necessary steps to control the emission rate of the particular Greenhouse gases.
 
-## Learning Laravel
+## ADVANTAGES:
+1.      Our IoT setup can collect Greenhouse Gases data from little areas which can be compared with other data. It will help everyone to know that which areas are more prone to risks and where we should take steps.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2.      Data is easily accessible for all type of users. They can track the daily data through our app.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3.      Government and Non-Government organization can use our website’s API key to get all data and take important steps.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## SPACE AGENCY DATA
 
-### Premium Partners
+For Carbon Dioxide 
+https://search.earthdata.nasa.gov/search?fi=OCO-2&fl=2%20-%20Geophys.%20Variables%2C%20Sensor%20Coordinates
+https://search.earthdata.nasa.gov/search?fi=OCO-3&as%5binstrument%5d%5b0%5d=OCO-3
+https://search.earthdata.nasa.gov/search?q=carbon%20dioxide&fi=AIRS
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+For Methane 
+https://search.earthdata.nasa.gov/search?q=methane&fi=AIRS
 
-## Contributing
+For CFC 
+https://search.earthdata.nasa.gov/search?fi=HIRDLS&fs10=Halocarbons%20And%20Halogens&fsm0=Atmospheric%20Chemistry&fs20=Chlorofluorocarbons&fst0=Atmosphere
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+### REFERENCES TOOLS USED:
+ 1. Google Colab for Deep Learning
+ 2. Microcontroller (Arduino Nano 33BLE)
+ 3. Sensors(MQ-2, TGS832)
+ 4. Visual Studio Code 
+ 5. Php
+ 6. https://climate.nasa.gov/
+ 7. MySql
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
